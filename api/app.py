@@ -22,19 +22,21 @@ def get_conversations():
 @app.route('/add_conversation', methods=['POST'])
 def add_conversation():
     try:
-        # Get the conversation data from the request
         data = request.get_json()
 
-        # Validate the input data
         if 'question' not in data or 'answer' not in data:
             return jsonify({"error": "Missing 'question' or 'answer' in the request data"}), 400
 
-        # Load existing conversations
+        # Check if the file exists, and create it if it doesn't
+        if not os.path.exists('conversation_history.json'):
+            with open('conversation_history.json', 'w') as file:
+                json.dump([], file)
+
         try:
             with open('conversation_history.json', 'r') as file:
                 conversations = json.load(file)
-        except FileNotFoundError:
-            conversations = []
+        except json.JSONDecodeError:
+            return jsonify({"error": "Error decoding JSON from the conversation file."}), 500
 
         new_conversation = {
             "question": data['question'],
