@@ -1,11 +1,7 @@
-#!/bin/bash
-echo "Downloading dependencies..."
-pip install -r requirements.txt
+pip install -r requirements.txt 
 
-echo "Starting API Flask..."
 cd api
-FLASK_APP=app.py FLASK_ENV=development flask run &
+FLASK_APP=app.py FLASK_ENV=developement flask run &
 
 cd ..
-echo "Initializing voice assistant script."
-python3 script/voice.py
+python3 script/voice.py 2>/dev/null

@@ -251,6 +251,7 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             print("Exiting the assistant. Goodbye!")
             setText("Goodbye!")
+            GPIO.cleanup()
             setRGB(255, 0, 0)  # Set color to red before exit
             break
         except Exception as e:

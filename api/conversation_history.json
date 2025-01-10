@@ -1,0 +1,17 @@
+[
+    {
+        "question": "hello how are you",
+        "answer": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?",
+        "timestamp": "2025-01-10 23:52:34"
+    },
+    {
+        "question": "are you sentient",
+        "answer": "No, I am not sentient. I am a computer program designed to assist with providing information and answering questions to the best of my abilities.",
+        "timestamp": "2025-01-11 00:05:16"
+    },
+    {
+        "question": "where is Japan",
+        "answer": "Japan is an island country located in East Asia. It is situated in the Pacific Ocean, east of the Korean Peninsula and China.",
+        "timestamp": "2025-01-11 00:08:19"
+    }
+]
