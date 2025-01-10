@@ -8,4 +8,4 @@ FLASK_APP=app.py FLASK_ENV=development flask run &
 
 cd ..
 echo "Initializing voice assistant script."
-python3 script/voice.py
+python3 script/voice.py 2>/dev/null
