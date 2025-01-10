@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversations</title>
+</head>
+<body>
+    <h1>Conversation History</h1>
+    <table border="1">
+        <tr>
+            <th>Timestamp</th>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        {% for conversation in conversations %}
+        <tr>
+            <td>{{ conversation.timestamp }}</td>
+            <td>{{ conversation.question }}</td>
+            <td>{{ conversation.answer }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
