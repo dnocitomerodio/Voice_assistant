@@ -77,7 +77,7 @@ def scrollText(text):
         time.sleep(0.1)  # Adjust scroll speed
 
 # OpenAI API key
-openai.api_key = "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"
+openai.api_key = "??"
 
 def get_microphone_index():
     """Identify and return the correct microphone device index."""
