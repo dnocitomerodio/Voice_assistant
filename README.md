@@ -109,5 +109,3 @@ The `requirements.txt` should contain:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-Feel free to modify the sections in this template according to your project's specifics. The idea is to provide clear instructions for anyone who wants to run or contribute to your project.
